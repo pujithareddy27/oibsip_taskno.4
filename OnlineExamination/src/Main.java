@@ -193,7 +193,7 @@ public class Main {
         private void loadSampleQuestions() {
             questions.add(new Question("What is the capital of India?", Arrays.asList("Delhi", "Madrid", "Paris", "Rome"), 2));
             questions.add(new Question("Which language runs in a web browser?", Arrays.asList("Java", "C", "Python", "JavaScript"), 3));
-            // Add more questions as needed
+            
         }
     }
 
