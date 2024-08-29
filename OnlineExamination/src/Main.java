@@ -13,7 +13,7 @@ public class Main {
             System.out.println("2. Quit");
             System.out.print("Choose an option: ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // consume newline
+            scanner.nextLine(); 
 
             switch (choice) {
                 case 1:
@@ -47,7 +47,7 @@ public class Main {
                 System.out.println("4. Logout");
                 System.out.print("Choose an option: ");
                 int choice = scanner.nextInt();
-                scanner.nextLine(); // consume newline
+                scanner.nextLine(); 
 
                 switch (choice) {
                     case 1:
@@ -201,13 +201,13 @@ public class Main {
         private User user;
         private List<Question> questions;
         private Timer timer;
-        private int duration; // in seconds
+        private int duration; 
         private boolean isCompleted;
 
         public ExamSession(User user, List<Question> questions) {
             this.user = user;
             this.questions = questions;
-            this.duration = 60 * 10; // Example: 10 minutes
+            this.duration = 60 * 10; 
             this.isCompleted = false;
         }
 
@@ -247,7 +247,7 @@ public class Main {
                 isCompleted = true;
                 timer.cancel();
                 System.out.println("Exam submitted.");
-                // Calculate score and show results
+    
                 int score = 0;
                 List<String> selectedAnswers = user.getSelectedAnswers();
                 for (int i = 0; i < questions.size(); i++) {
